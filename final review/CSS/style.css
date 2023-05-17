@@ -1,0 +1,743 @@
+/* utility section */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* border: 2px solid red; */
+}
+
+a,
+a:hover,
+a:focus,
+input,
+button,
+textarea,
+button:hover,
+button:focus {
+  outline: none;
+  text-decoration: none;
+}
+html {
+  /* font-size: 62.5%; */
+  overflow-x: hidden;
+  /* scroll-padding-top: 9rem; */
+  scroll-behavior: smooth;
+}
+li {
+  list-style: none;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+dl,
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ol,
+ul {
+  padding-left: 0;
+}
+
+button,
+button.active {
+  border: #ffffff;
+
+  border: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+/* home- container */
+.home-container {
+  height: 587px;
+  background: url(../img/bg1.png) no-repeat center center/cover;
+  /* background-color: rgba(3, 92, 39, 1); */
+  mix-blend-mode: darken;
+}
+
+.navbar-1 .nav-item .nav-link {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+
+  text-align: right;
+
+  /* White */
+
+  color: #ffffff;
+}
+
+.nav-search .icon {
+  height: 43px;
+  width: 43px;
+  background: #ff4f4f;
+  font-size: 16px;
+  border: 1px solid transparent;
+  color: #ffffff;
+  font-weight: 700;
+  border-radius: 50%;
+}
+.nav-search .icon:hover {
+  background: transparent;
+  border-color: #ff4f4f;
+  color: #ff4f4f;
+}
+.banner-heading {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 70px;
+  /* or 125% */
+
+  text-align: center;
+  max-width: 874px;
+
+  color: #ffffff;
+}
+.banner-search {
+  height: 81px;
+  background: #ffffff;
+  border-radius: 5px;
+  max-width: 1144px;
+}
+.search-btn {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 42px;
+  text-align: center;
+
+  /* White */
+  width: 28%;
+  height: 100%;
+  color: #ffffff;
+  background: #ff4f4f;
+  border-radius: 5px;
+  border: 1px solid transparent;
+}
+
+.search-btn:hover,
+.card-button:hover {
+  color: #ff4f4f;
+  background: transparent;
+  border-color: #ff4f4f;
+}
+.search-input {
+  width: 90%;
+  height: 100%;
+  font-size: 29px;
+  outline: none;
+  border: none;
+  padding-left: 25px;
+}
+.search-input::placeholder {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 160%;
+  /* or 35px */
+
+  /* Dark grey */
+
+  color: #05181f;
+
+  opacity: 0.5;
+}
+
+.banner-search .icon {
+  font-size: 36px;
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  height: 100%;
+}
+/* card container */
+.card-container,
+.blog-container {
+  height: auto;
+}
+
+.container-header .card-header1,
+.link-header .link-title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 130%;
+  color: #05181f;
+}
+.navigation-arrow p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: right;
+
+  color: #05181f;
+}
+.card-bottom p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 30px;
+  /* identical to box height, or 171% */
+
+  text-align: center;
+
+  /* Dark Green */
+
+  color: #035c27;
+  background: #ffffff;
+  border-radius: 5px;
+}
+
+.card-body .card-text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  /* or 29px */
+
+  /* Dark grey */
+
+  color: #05181f;
+
+  opacity: 0.75;
+}
+.card {
+  background-color: #f4f4ee;
+  border-radius: 5px 5px 20px 20px;
+}
+.right-arrow{
+  color: rgba(255, 79, 79, 1);
+  font-size: 40px;
+}
+
+.card-button {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+
+  text-align: center;
+  width: 222px;
+  height: 47px;
+  color: #ffffff;
+  background: #ff4f4f;
+  border-radius: 5px;
+  border: 1px solid transparent;
+}
+
+
+
+/* blog container */
+
+.owl-item.active.center .slider-card {
+  transform: scale(1.15);
+  opacity: 1;
+  background: rgba(21, 121, 67, 1);
+  /* fallback for old browsers */
+
+  color: #fff;
+}
+
+.owl-item.active.center .slider-card .card-body .card-title {
+  color: #FFFFFF;
+
+}
+
+.owl-item.active.center .slider-card .card-body .card-text {
+  color: #FFFFFF;
+
+}
+
+.owl-item.active.center .slider-card .card-btn {
+
+  background: #FFFFFF;
+  color: #157943;
+}
+
+.owl-item.active.center .slider-card .card-btn:hover {
+  background: #157943;
+  color: #FFFFFF;
+}
+
+.owl-nav .owl-prev {
+  position: absolute;
+  top: calc(50% - 25px);
+  left: 0;
+  opacity: 1;
+  font-size: 30px !important;
+  z-index: 1;
+  display: none !important;
+}
+
+.owl-nav .owl-next {
+  position: absolute;
+  top: calc(60% - 25px);
+  right: 0;
+  opacity: 1;
+  font-size: 30px !important;
+  z-index: 1;
+  background: #FF4F4F !important;
+  border-radius: 50px;
+  width: 91px;
+  height: 66.02px;
+  color: #FFFFFF !important;
+  border: 1px solid transparent !important;
+}
+
+.owl-nav .owl-next:hover {
+  color: #FF4F4F !important;
+  background: transparent !important;
+  border: 1px solid #FF4F4F !important;
+
+
+}
+
+.slider-card {
+  border: 1px solid gray;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #F4F4EE;
+  transform: scale(0.9);
+  opacity: 0.5;
+  transition: all 0.3s;
+  box-shadow: 0 15px 45px -20px rgb(0 0 0 / 73%);
+  margin: 50px 15px 90px 15px;
+
+}
+
+.card-body .card-title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 130%;
+  color: #05181f;
+}
+
+.card-body .card-text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  color: #05181f;
+  opacity: 0.75;
+}
+
+.card-btn {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  background: #157943;
+  border-radius: 5px;
+  color: #FFFFFF;
+  width: 83px;
+  height: 30px;
+  border: 1px solid transparent;
+
+}
+
+.card-btn:hover {
+  background: #ffffff;
+  color: #157943;
+  border-color: #157943;
+}
+
+.img-height {
+  height: 200px !important;
+}
+
+
+/* link container */
+.link-container .link a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+
+  text-align: center;
+  color: #05181f;
+}
+
+.link {
+  background: transparent;
+  /* width: 150px; */
+  height: 50px;
+  border: 1px solid rgba(21, 121, 67, 1);
+  border-radius: 5px;
+}
+
+/* booking section */
+.booking-section {
+  height: 158px;
+  background: rgba(3, 92, 39, 1);
+  border-radius: 5px;
+}
+.booking-section p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 130%;
+  /* or 52px */
+
+  display: flex;
+  align-items: center;
+
+  /* White */
+
+  color: #ffffff;
+}
+.booking-btn {
+  background: #ffffff;
+  border-radius: 5px;
+  display: grid;
+  place-items: center;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: #ff4f4f;
+  width: 233px;
+  height: 54px;
+  border: 1px solid transparent;
+}
+
+.booking-btn:hover {
+  background: transparent;
+  border-color: #ff4f4f;
+}
+
+
+
+
+/* footer section */
+
+.footer-container{
+    background: #035C27;
+    height: 100%;
+
+}
+.f-header{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 32px;
+/* identical to box height, or 200% */
+
+
+/* White */
+
+color: #FFFFFF;
+}
+
+.footer-menu ul li a{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+.footer-menu .icon{
+    background: #FF4F4F;
+    color: #f4f4ee;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+font-size: 16px;
+    border: 1px solid transparent;
+}
+.footer-menu .icon:hover,.footer-btn:hover{
+    border-color:#FF4F4F;
+    color: #ff4f4f;
+    background: transparent;
+}
+.footer-btn{
+    background: #FF4F4F;
+border-radius: 5px;
+width: 295px;
+height: 60px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+/* identical to box height */
+
+text-align: center;
+border: 1px solid transparent;
+
+color: #FFFFFF;
+
+}
+.copy-right p{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 30px;
+color: #FFFFFF;
+
+}
+
+
+
+
+/* media query */
+
+@media only screen and (max-width: 1400px) {
+/* card container */
+.card-bottom p {
+  line-height: 21px;}
+
+
+}
+@media only screen and (max-width: 1200px) {
+  /* home section */
+  .logo-icon {
+    width: 50px;
+  }
+  .navbar-1 .nav-item .nav-link {
+    font-size: 14px;
+  }
+  .banner-heading {
+    font-weight: 700;
+    font-size: 50px;
+    max-width: 761px;
+  }
+  .banner-search {
+    max-width: 901px;
+  }
+  /* booking section */
+  .booking-section p {
+    font-size: 33px;}
+
+    .booking-btn {
+        width: 225px;
+        height: 53px;} 
+
+        /* card container */
+        .card-bottom p {
+          line-height: 17px;
+          text-align: left;
+      }
+
+}
+/* laptop  */
+@media only screen and (max-width: 991px) {
+  /* banner section */
+  .home-container {
+    height: 100%;
+  }
+  .banner-heading {
+    font-size: 44px;
+    max-width: 731px;
+    line-height: 63px;
+  }
+  .banner-search {
+    height: 76px;
+  }
+  .nav-search {
+    display: flex;
+    position: absolute;
+    top: 8%;
+    right: 21%;
+  }
+  /* booking container */
+  .booking-btn {
+    width: 220px;
+    height: 53px;
+}
+.booking-section p {
+    font-size: 31px;
+}
+
+/* card container */
+.card-body .card-title {
+  font-size: 18px;
+  line-height: 127%;}
+  .card-body .card-text {
+    font-size: 14px;
+    line-height: 152%;}
+
+    .container-header .card-header1, .link-header .link-title {
+      font-size: 30px;
+      line-height: 124%;}
+      .navigation-arrow p {
+        font-size: 14px;
+        line-height: 25px;}
+        .right-arrow {
+          font-size: 31px;
+      }
+
+
+}
+/*  tab view */
+@media only screen and (max-width: 767px) {
+  /* home banner */
+
+  .banner-heading {
+    font-size: 38px;
+    max-width: 508px;
+    line-height: 49px;
+  }
+  .banner-search .icon {
+    font-size: 25px;
+  }
+  .banner-search {
+    height: 63px;
+  }
+  .search-input {
+    font-size: 16px;
+  }
+  .search-btn {
+    font-size: 19px;
+  }
+  .search-input::placeholder {
+    font-size: 16px;
+  }
+  /* booking section */
+  .booking-section p {
+    font-size: 26px;
+}
+.booking-btn {
+    width: 214px;
+    height: 47px;
+    font-size: 16px;
+}
+/* bootstrap slider */
+.carousel-inner {
+  height: 495px;
+  /* border: 1px solid red; */
+}
+/* card container */
+.container-header .card-header1 {
+  font-size: 24px;
+  line-height: 124%;
+}
+
+}
+
+/* mobile view  */
+@media only screen and (max-width: 576px) {
+  .search {
+    height: 42px !important;
+    border-radius: 5px;
+    background: white;
+  }
+  .banner-search {
+    flex-direction: column;
+    height: 100%;
+    background: transparent;
+  }
+  .banner-heading {
+    font-size: 29px;
+    line-height: 39px;
+  }
+  .banner-search .icon {
+    background: transparent;
+  }
+  .search-input {
+    padding-left: 9px;
+    background: transparent;
+  }
+  /* link container */
+  .link {
+    width: 100%;
+  }
+  /* booking section */
+  .booking-section {
+    height: auto;}
+    .booking-btn {
+        width: 100%;
+        height: 57px;
+        font-size: 19px;
+    }    
+    .booking-section p {
+        font-size: 35px;
+    }
+    /* footer section */
+    .footer-btn {
+        width: 100%;
+    }
+    .card {
+  
+      margin-bottom: 200px;
+  }
+}
+@media only screen and (max-width: 479px) {
+  /* home section */
+  .logo-icon {
+    width: 35px;
+  }
+  .navbar-brand {
+    height: 30px;
+    margin-bottom: 10px;
+  }
+  /* card container */
+  .container-header .card-header1 {
+    font-size: 17px;
+    line-height: 124%;
+}
+.navigation-arrow p {
+  font-size: 13px;
+  line-height: 25px;
+}
+.right-arrow {
+  font-size: 23px;
+}
+}
+@media only screen and (max-width: 379px) {
+  /* nav section */
+  .nav-search .icon {
+    height: 33px;
+    width: 31px;
+    font-size: 13px;
+  }
+  .nav-search {
+    top: 9%;
+  }
+  /* card container */
+  .carousel-inner {
+    height: 407px;
+    /* border: 1px solid red; */
+}
+}
